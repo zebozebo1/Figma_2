@@ -1,0 +1,137 @@
+.footer-color {
+  background-color: $color-black;
+}
+.footer {
+  padding: 50px 0;
+  color: rgb(255, 255, 255);
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+.footer_data {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+  .footer_info {
+    h3 {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+      margin-bottom: 16px;
+      sup {
+        color: #fff;
+        font-size: 8.218px;
+        font-weight: 900;
+        line-height: 107.143%;
+        letter-spacing: -0.147px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    li {
+      list-style: none;
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 142.857%;
+      }
+    }
+  }
+}
+.footer-Subscribe {
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  position: relative;
+  max-width: 338px;
+  margin: auto;
+  input {
+    padding: 12px 54px 12px 24px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    width: 100%;
+  }
+  i {
+    position: absolute;
+    font-size: 16px;
+    right: 26px;
+    top: 70px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+    opacity: 0.4;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .footer {
+    margin: auto;
+    h2 {
+      text-align: start;
+    }
+    .general {
+      display: flex;
+      justify-content: space-between;
+      gap: 89px;
+    }
+  }
+  .footer_data {
+    flex: 2;
+    gap: 10px;
+    .footer_info {
+      ul {
+        text-align: left;
+      }
+      h3 {
+        text-align: start;
+      }
+    }
+  }
+  .footer-Subscribe {
+    margin-bottom: 30px;
+    flex: 1;
+    h3 {
+      text-align: start;
+    }
+    .input {
+      width: 100%;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin: auto;
+    display: flex;
+    column-gap: 100px;
+  }
+}

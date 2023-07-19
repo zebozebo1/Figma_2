@@ -1,0 +1,136 @@
+.mental_health {
+  background-color: $color-black;
+  padding: 24px 0;
+  .mental-right {
+    color: white;
+    h3 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 133.333%;
+      letter-spacing: -0.1px;
+      margin-top: 1.4rem;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+      margin: 14px 0;
+    }
+  }
+  .progres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 171.429%;
+      letter-spacing: 0.1px;
+    }
+  }
+  .progress {
+    display: none;
+  }
+  .mental-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img:nth-child(2) {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .mental_health {
+    .mental-left {
+      img {
+        max-width: 100%;
+        height: 550px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .mental_health {
+    .mental-left {
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        display: block;
+      }
+    }
+    .mental-right {
+      max-width: 415px;
+      h3 {
+        margin-top: 0;
+        text-align: start;
+      }
+      p {
+        text-align: start;
+      }
+    }
+    .progres {
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+      }
+    }
+  }
+  .mental-trec {
+    display: inline-flex;
+    column-gap: 129px;
+    padding: 64px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mental_health {
+    .mental-right {
+      h3 {
+        margin-top: 0;
+        text-align: start;
+        max-width: 503px;
+      }
+      p {
+        text-align: start;
+      }
+    }
+    .mental-left {
+      img:nth-child(1) {
+        display: block;
+        height: 423px;
+      }
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+    .progress {
+      display: flex;
+      justify-content: center;
+      li {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171.429%;
+        letter-spacing: 0.1px;
+      }
+    }
+    .progres {
+      display: none;
+    }
+  }
+  .mental {
+    display: flex;
+    column-gap: 133px;
+    padding: 96px 0;
+  }
+  .mental-trec {
+    flex-direction: column;
+    max-width: 553px;
+  }
+}

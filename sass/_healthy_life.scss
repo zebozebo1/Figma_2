@@ -1,0 +1,55 @@
+.healthy_life {
+  background-color: $color_bacground;
+  padding: 20px 0;
+  .naturionals {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .expert {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .expert_img {
+        display: flex;
+        column-gap: 16px;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: #000;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 155.556%; /*  */
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .healthy_life {
+    .naturionals {
+      padding: 39px 0;
+      flex-direction: row;
+      column-gap: 61px;
+      .expert {
+        .expert_img {
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .healthy_life {
+    .naturionals {
+      padding: 64px 0;
+      flex-direction: row;
+      column-gap: 30px;
+    }
+  }
+}

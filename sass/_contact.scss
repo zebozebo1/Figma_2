@@ -1,0 +1,58 @@
+.contact {
+  padding: 192px 0;
+  width: 100%;
+  background: url("/images/yellow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.yourself {
+  p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: $color-black;
+  }
+  h2 {
+    // max-width: 328px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: $color-black;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  button {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    padding: 8px 16px;
+    display: flex;
+    margin: auto;
+    border-radius: 24px;
+    border: none;
+  }
+}
+@media screen and (min-width: 640px) {
+  .yourself {
+    h2 {
+      font-size: 34px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .yourself {
+    h2 {
+      font-size: 40px;
+      line-height: 120%;
+      max-width: 600px;
+    }
+  }
+}
